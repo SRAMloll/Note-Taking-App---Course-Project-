@@ -15,10 +15,13 @@ def get_note():
     note_to_display = content.split("\n")
     return note_to_display
 
-
 @app.route("/")
 def homepage():
     return get_html("index")
+
+@app.route("/createnote")
+def create_note():
+    return get_html("createnote")
 
 @app.route("/viewnotes")
 def view_note():
@@ -28,18 +31,20 @@ def view_note():
     for note in notes:
         actual_notes += "<p>" + note + " </p>"
     
-    if len (actual_notes) != 0:
-            return html_page.replace("$$notes$$", actual_notes)
-    else:
-         return html_page.replace("$$notes$$", "<p> There is no note yet. Please create a note! </p>")
+    #providing alternative text if the txt file is empty
+    if actual_notes == 0:
+        actual_notes = "<p> There is no note yet. Please create a note! </p>"
     
-            
+    return html_page.replace("$$notes$$", actual_notes)
+    
+    
+         
 
 @app.route("/search")
 def note_search():
     html_page = get_html("viewnotes")
     notes = get_note()
-    note_query = flask.request.args.get("q")
+    note_query = flask.request.args.get("query")
     note_found = ""
     for note in notes:
         if note.lower().find (note_query.lower()) != -1 :
@@ -47,4 +52,6 @@ def note_search():
     if note_found == "":
             note_found = "No note with this/these word(s) were found."
     return html_page.replace("$$notes$$", note_found)
+
+
 

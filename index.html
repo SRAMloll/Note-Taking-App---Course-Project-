@@ -11,26 +11,21 @@
     
 
     <div id="nameInput">
-    <input type="text" id = "namequery" placeholder = "please enter your name" name ="q">
+    <input type="text" id = "namequery" placeholder = "please enter your name">
     <input type = "submit" value = "Submit">
     
     </div>
 
     <h3> What would you like to do? </h3>
 
-    <h4>Create a new note</h4>
-
-    <input type="text" placeholder="enter a note here" id ="textBox"><br><br>
-    <input type="button" value = "Add note" id ="addButton">
-
-    <h4>See all my notes</h4>
-
-    <a href="/viewnotes" id="link1"> Access your saved notes here. </a> <br> <br>
+    <a href="/createnote" id="link1"> Create a new note </a> <br> <br>
+    
+    <a href="/viewnotes" id="link2"> See all my notes </a> <br> <br>
 
     <h4>Search for a note</h4>
 
     <form action="/search" method = "get">
-        <input type="text" id = "query" placeholder = "enter one or two words" name ="q">
+        <input type="text" id = "query" placeholder = "enter one or two words" name ="query">
         <input type = "submit" value = "search note">
 </body>
 </html>
