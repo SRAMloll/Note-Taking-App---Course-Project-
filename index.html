@@ -17,15 +17,30 @@
     </div>
 
     <h3> What would you like to do? </h3>
-
-    <a href="/createnote" id="link1"> Create a new note </a> <br> <br>
     
-    <a href="/viewnotes" id="link2"> See all my notes </a> <br> <br>
+    <div>
+    <h4>Create a new note</h4> <br>
+        <form action="/createnote" method = "get" id = "newnoteform">
+            <input type="text" id = "newnote" placeholder = "enter a note" name ="newnote">
+            <input type = "submit" value = "Save my note" id ="addButton">  
+            <input type="button" value = "Delete the last note" id = "deleteButton">
+            <input type="button" value = "Clear all" id = "clearButton">
+            <br> <br>
 
-    <h4>Search for a note</h4>
+    </div>
+    <div>
+    
+    <h4>View my saved notes</h4> <br>
 
-    <form action="/search" method = "get">
+    <a href="/viewnotes" id="link2"> Click here to see all your notes </a> <br> <br>
+    </div>
+
+    <div>
+    <h4>Search for a note</h4> <br>
+
+    <form action="/search" method = "get" id = queryform>
         <input type="text" id = "query" placeholder = "enter one or two words" name ="query">
         <input type = "submit" value = "search note">
+    </div>
 </body>
 </html>

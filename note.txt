@@ -1,5 +1,8 @@
-This is the first note:
-What do you think of this second note?
-I am entereing the third note. 
-My fourth though was to make it happen.
-And here is the fifth 
+This is the first note.
+And now the second one.
+The third note should be a little bit longer. let's see...
+
+This is the fourth note test.This is the test for the fith note qnd I ams still having trouble with the get 
+the sixth note should be in a new line.
+
+
