@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEMIDEA</title>
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
     <h1 id="title"> MEMIDEA </h1> 
@@ -11,10 +12,15 @@
     
 
     <div id="nameInput">
-    <input type="text" id = "namequery" placeholder = "please enter your name">
-    <input type = "submit" value = "Submit">
+            <p> Welcome </p>   
+    </div> <br>
+
+    <div>
+    <input type="text" id = "nameQuery" placeholder = "please enter your name">
+    <input type="button" value = "Save my name" id ="addButton">
+    <input type="button" value = "Clear my name" id = "clearButton">
+</div>
     
-    </div>
 
     <h3> What would you like to do? </h3>
     
@@ -42,7 +48,9 @@
         <input type="text" id = "query" placeholder = "enter one or two words" name ="query">
         <input type = "submit" value = "search note">
     </form>
-    
+
     </div>
+
+    <script src="static/script.js"></script>
 </body>
 </html>

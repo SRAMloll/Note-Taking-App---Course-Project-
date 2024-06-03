@@ -1,0 +1,45 @@
+#listZone {
+    font-size: 13px;
+    color: white;
+    background-color: black;
+    border: 5px solid black;
+    text-align: center;
+    padding: 15px 32px;
+}
+
+#addButton {
+    color: white;
+    background-color: green;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+#deleteButton {
+    color: white;
+    background-color:orange;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+#clearButton {
+    color: white;
+    background-color: red;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+#textBox {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
