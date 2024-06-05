@@ -1,45 +1,131 @@
-#listZone {
-    font-size: 13px;
-    color: white;
-    background-color: black;
-    border: 5px solid black;
+.container {
+    position: relative;
     text-align: center;
-    padding: 15px 32px;
+    color: white;
+}
+
+.title {
+    font-size: 60px;
+    font-family: Arial ;
+    position: absolute;
+    color: rgb(59, 46, 143);
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.subtitle {
+    font-size: 30px;
+    position: absolute;
+    color: rgb(102, 137, 218);
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:'Lucida Grande', sans-serif;
+}
+
+img {
+  opacity: 0.5; 
+  width: 100%; 
+}
+
+#nameInput {
+    font-size: 30px;
+    font-family: Arial;
+    color: rgb(59, 46, 143);
+    text-align: left;
+    line-height: 0.2;
 }
 
 #addButton {
-    color: white;
-    background-color: green;
+    color: rgb(255,255,255);
+    background-color: rgb(59, 46, 143);
     text-align: center;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: left 20px;
     width: 10%;
+    outline: none;
+    outline-width: 0cm;
+    border-width: 0cm;
+    border-color:rgb(59, 46, 143) ;
 }
 
-#deleteButton {
-    color: white;
-    background-color:orange;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
-}
 
 #clearButton {
-    color: white;
-    background-color: red;
+    color: rgb(255, 255, 255);
+    background-color: rgb(59, 46, 143);
     text-align: center;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: left 20px;
+    width: 10%;
+    outline: none;
+    outline-width: 0cm;
+    border-width: 0cm;
+    border-color:rgb(59, 46, 143) ;
+}
+
+#nameQuery {
+    display: block;
+    margin: left 20px;
+    text-align: center;
     width: 10%;
 }
 
-#textBox {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+.submenu {
+    font-size: 30px;
+    position: absolute;
+    color: rgb(102, 137, 218);
+    transform: translate(-50%, -50%);
+    font-family:'Lucida Grande', sans-serif;
+    left: 17%;
 }
+.menuchoice {
+    font-size: 20px;
+    text-align: left;
+    position: absolute;
+    color: rgb(59, 46, 143);
+    transform: translate(-50%, -50%);
+    font-family:'Arial';
+    left: 15%;
+}
+
+.menu {
+    background-color: rgb(251, 239, 222);
+}
+
+#query {
+    float: left;
+    margin: left 20px;
+}
+
+#querybutton {
+    float: left;
+    color: rgb(255, 255, 255);
+    background-color: rgb(59, 46, 143);
+    text-align: center;
+    width: 10%;
+    outline: none;
+    outline-width: 0cm;
+    border-width: 0cm;
+    border-color:rgb(59, 46, 143) ;
+}
+
+#newnote {
+    float: left;
+    margin: left 20px;
+}
+
+#addNote {
+    float: left;
+    color: rgb(255, 255, 255);
+    background-color: rgb(59, 46, 143);
+    text-align: center;
+    display: block;
+    margin: left 30px;
+    width: 10%;
+    outline: none;
+    outline-width: 0cm;
+    border-width: 0cm;
+    border-color:rgb(59, 46, 143) ;
+}
+
