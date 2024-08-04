@@ -1,97 +1,75 @@
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #5f5d7f;
+    display: flex;
+    justify-content: center;
+  }
+  
+.container {
+    width: 800px;
+    padding: 20px;
+    margin-top: 80px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+  }
+
+#background_image {
+    width: 795px;
+    height:450px;  
+}
 .title {
-    font-size: 60px;
-    font-family: Arial ;
-    position: absolute;
-    color: rgb(59, 46, 143);
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: rgb(102, 137, 218);
+    text-align: center;
+       
 }
 
 .subtitle {
+    font-weight: bold;
     font-size: 30px;
-    position: absolute;
-    color: rgb(102, 137, 218);
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family:'Lucida Grande', sans-serif;
-}
-
-img {
-  opacity: 0.5; 
-  width: 100%; 
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 #nameInput {
-    font-size: 30px;
-    font-family: Arial;
-    color: rgb(59, 46, 143);
-    text-align: left;
-    line-height: 0.2;
+    font-size: 25px;
+    color: rgb(102, 137, 218); 
 }
-
 #addButton {
-    color: rgb(255,255,255);
-    background-color: rgb(59, 46, 143);
-    text-align: center;
-    display: block;
-    margin: left 20px;
-    width: 10%;
-    outline: none;
-    outline-width: 0cm;
-    border-width: 0cm;
-    border-color:rgb(59, 46, 143) ;
+    
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(102, 137, 218);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+      
+#addButton:hover {
+        background-color: #3071a9;
 }
 
-
-#clearButton {
-    color: rgb(255, 255, 255);
-    background-color: rgb(59, 46, 143);
-    text-align: center;
-    display: block;
-    margin: left 20px;
-    width: 10%;
-    outline: none;
-    outline-width: 0cm;
-    border-width: 0cm;
-    border-color:rgb(59, 46, 143) ;
-}
-
-#nameQuery {
-    display: block;
-    margin: left 20px;
-    text-align: center;
-    width: 10%;
-}
+.divider {
+    border-top: 3px solid #5f5d7f;
+    border-radius: 2px;
+  }
 
 .submenu {
-    font-size: 30px;
-    position: absolute;
-    color: rgb(102, 137, 218);
-    transform: translate(-50%, -50%);
-    font-family:'Lucida Grande', sans-serif;
-    left: 17%;
+    font-size: 25px;
+    color: rgb(102, 137, 218); 
 }
 .menuchoice {
-    font-size: 20px;
-    text-align: left;
-    position: absolute;
-    color: rgb(59, 46, 143);
-    transform: translate(-50%, -50%);
-    font-family:'Arial';
-    left: 15%;
+    font-size: 25px;
+    color: rgb(12, 34, 87); 
 }
 
-.menu {
-    background-color: rgb(251, 239, 222);
-}
 
 #query {
     float: left;
@@ -99,15 +77,21 @@ img {
 }
 
 #querybutton {
-    float: left;
-    color: rgb(255, 255, 255);
-    background-color: rgb(59, 46, 143);
-    text-align: center;
-    width: 10%;
-    outline: none;
-    outline-width: 0cm;
-    border-width: 0cm;
-    border-color:rgb(59, 46, 143) ;
+        
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(102, 137, 218);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+    }
+          
+#querybutton:hover {
+    background-color: #3071a9;
 }
 
 #newnote {
@@ -116,16 +100,43 @@ img {
 }
 
 #addNote {
-    float: left;
-    color: rgb(255, 255, 255);
-    background-color: rgb(59, 46, 143);
-    text-align: center;
-    display: block;
-    margin: left 30px;
-    width: 10%;
-    outline: none;
-    outline-width: 0cm;
-    border-width: 0cm;
-    border-color:rgb(59, 46, 143) ;
+      
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(102, 137, 218);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+      
+#addNote:hover {
+        background-color: #3071a9;
 }
 
+
+#seebutton {
+        
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(102, 137, 218);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+    }
+          
+#seebutton:hover {
+    background-color: #3071a9;
+}
+
+.foundnotes {
+    font-size: 25px;
+    color: rgb(12, 34, 87); 
+}

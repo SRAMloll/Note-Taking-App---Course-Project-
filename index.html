@@ -8,58 +8,55 @@
 </head>
 <body>
     <div class="container">
-    <img src="static/note_app_illus.jpg" id = "background_image" alt="note">
-    <h1 class="title"> MEMIDEA </h1> 
-    <h2 class="subtitle"> Your reliable note taking app.</h2>
-    </div>
+        <div class = "title">MEMIDEA </div> <br>
+       
+        <div class="subtitle"> Your reliable note taking app.</div> <br>
+    
+        <img src="static/note_app_illus.jpg" id = "background_image" alt="note">
+        
 
-    <div id="nameInput">
-            <p> Welcome </p>   
-    </div>
-
-    <div>
-    <input type="text" id = "nameQuery" placeholder = "Your name here"><br>
-    <input type="button" value = "Save my name" id ="addButton"> <br> 
-    <input type="button" value = "Clear my name" id = "clearButton">
-</div>
-<br> <br> <br>
+        <div id="nameInput">
+            <p> Hi! What is your name? </p>   
+                
+        <input type="text" id = "nameQuery" placeholder = "Enter your name here"><br>
+        <input type="button" value = "Save my name" id ="addButton"> <br><br> 
+        
+        </div>
+        
+        <br>
+         <hr class="divider">
+        <br> 
     
 
-<h2 class="submenu"> What would you like to do? </h2> <br> <br> <br>
+        <div class="submenu"> What would you like to do? </div> <br> 
     
-<div class="menu">
-    <h4 class="menuchoice">Create a new note</h4> <br>
-    <br> <br> <br>
-    <div class="menubody">
-        <form action="/createnote" method = "get" id = "newnoteform"> <br><br>
+        <div class="menuchoice"> &bull; Create a new note</div> <br>
+         
+        <form action="/createnote" method = "get" id = "newnoteform"> 
             <input type="text" id = "newnote" placeholder = "enter a note" name ="newnote"> <br><br>
             <input type = "submit" value = "Save my note" id ="addNote">  
-            
-            <br> <br>
         </form>
-        <br> <br> <br>
+        <br> 
     
     
-    <h4 class="menuchoice">View my saved notes</h4> <br>
-    <br> <br> <br>
-
-    <a href="/viewnotes" id="link2"> Click here to see all your notes </a> <br> <br>
+        <div class="menuchoice"> &bull; View my saved notes</div> <br>
+        
+        <form action="/viewnotes">
+        <input type="submit" value="See all your notes here" id="seebutton" />
+        </form>
+        <br> 
     
-    <br> <br> <br>
+        <div class="menuchoice"> &bull; Search for a note</div> <br>
+        
+        <form action="/search" method = "get" id = queryform>
+            <input type="text" id = "query" placeholder = "enter one or two words" name ="query"> <br><br>
+            <input type = "submit" value = "search note" id="querybutton">
+        </form>
+       
+           
 
-    <h4 class="menuchoice">Search for a note</h4> <br>
-    <br> <br> <br>
-
-    <form action="/search" method = "get" id = queryform>
-        <input type="text" id = "query" placeholder = "enter one or two words" name ="query"> <br> <br>
-        <input type = "submit" value = "search note" id="querybutton">
-    </form>
+        
     </div>
-    <br> <br> <br>
-    <br> <br> <br>
-
-</div>
-
     <script src="static/script.js"></script>
 </body>
 </html>

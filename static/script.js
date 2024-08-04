@@ -2,15 +2,15 @@
 const nameInput = document.getElementById("nameInput");
 const nameQuery = document.getElementById("nameQuery");
 const addButton = document.getElementById("addButton");
-const clearButton = document.getElementById("clearButton");
+
 
 // function to add item to the list and store in Local Storage
 
 function addToList () {
   if (nameQuery.value != "") {
   const newItem = document.createElement("p");
-  newItem.innerHTML = nameQuery.value + "!";
-  nameInput.appendChild(newItem);
+  newItem.innerHTML = "Welcome " + nameQuery.value + "!";
+  nameInput.innerHTML= newItem.innerHTML;
   }
 }
 
@@ -18,7 +18,7 @@ function addToLocalStorage () {
   addToList ();
   if (nameQuery.value != "") {
   const position = localStorage.length + 1;
-  localStorage.setItem (position, nameQuery.value + "!");
+  localStorage.setItem (position, "Welcome back " + nameQuery.value + "!");
   nameQuery.value = "";
   }
 }
@@ -30,20 +30,15 @@ function displaySavedItems() {
     if (localStorage.getItem(i.toString()) !== null) {
         const savedItems = document.createElement("p");
         savedItems.innerHTML = localStorage.getItem(i.toString());
-        nameInput.appendChild(savedItems);
+        nameInput.innerHTML = savedItems.innerHTML;
       }
     }
   }
 
 
-// function to clear local storage
 
-function clearAll () {
-  localStorage.clear();
-  nameInput.innerHTML = "Welcome";
-}
 
 // adding the event listeners to the buttons
 addButton.addEventListener("click", addToLocalStorage);
 displaySavedItems();
-clearButton.addEventListener("click", clearAll);
+
